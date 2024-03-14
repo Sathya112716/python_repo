@@ -9,6 +9,6 @@ for _ in range(n):
         row = list(map(int, input().split()))
         arr.append(row)
 axis = int(input("Enter axis (0 for columns, 1 for rows, None for overall): "))
-result = min_max_axis(arr,axis)
-logging.debug(result)
+rslt = min_max_axis(arr,axis)
+logging.debug(rslt)
 
