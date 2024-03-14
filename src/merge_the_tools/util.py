@@ -14,4 +14,4 @@ def merge_the_tools(string, k):
                 unique_chars.append(char)
         result=''.join(unique_chars)
         logging.debug(result)
-    return(result)
+    return result
