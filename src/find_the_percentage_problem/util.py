@@ -1,7 +1,5 @@
 # util.py
-
 import logging
-
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def calc_average(n,student_input,query_name):
@@ -15,5 +13,5 @@ def calc_average(n,student_input,query_name):
         average = sum(student_marks[query_name]) / len(student_marks[query_name])
         return f"{average:.2f}"
     else:
-        return "Student not found"
+        return "Student not there"
 
