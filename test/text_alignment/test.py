@@ -1,6 +1,6 @@
 import unittest
 from python_repo.src.text_alignment.util import text_alignment_logo
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
    def test_something(self):
      expected_result = [
            '  H  ',
