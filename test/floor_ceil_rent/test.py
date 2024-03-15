@@ -1,7 +1,7 @@
 from python_repo.src.floor_ceil_rint.util import floor_ceil_rint_calculate
 import unittest
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test1_something(self):
         input_str = "1.1 2.2 3.3 4.4 5.5 6.6 7.7 8.8 9.9"
 
         floor, ceil, rint = floor_ceil_rint_calculate(input_str)
