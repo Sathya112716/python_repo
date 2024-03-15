@@ -9,7 +9,7 @@ class TestCalAvg(unittest.TestCase):
         expectedoutput = "suthya"
         self.assertEqual(actualoutput, expectedoutput) ##second position is mutated
 
-    def test_mutate_string(self):
+    def test1_mutate_string(self):
         actualoutput = mutate_string("ravi", 4,'l')
         expectedoutput = "ravl"
         self.assertEqual(actualoutput, expectedoutput) ##4th position
