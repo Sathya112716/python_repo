@@ -12,7 +12,7 @@ class TestCalcAverage(unittest.TestCase):
 
     def test1_calc_average(self):
         n = 3
-        student_data = ['ravi 10 20 79', 'ambika 33 66 77', 'eniyan 45 12 34']
+        student_data = ['ravi 10 20 79', 'ambika 33 66 77', 'priya 45 12 34']
         query_name = 'ambika'
         actual_output = calc_average(n, student_data, query_name)
         expected_output = '58.67'
