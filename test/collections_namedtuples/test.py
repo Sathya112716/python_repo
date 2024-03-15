@@ -5,7 +5,7 @@ class MyTestCase(unittest.TestCase):
         res=calculate_average()
         self.assertEqual(res, '79.33')  # add assertion here
 
-    def test_something(self):
+    def test1_something(self):
         res=calculate_average()
         self.assertEqual(res, '86.98')
 
