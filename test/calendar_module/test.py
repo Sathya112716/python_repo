@@ -9,7 +9,7 @@ class TestCalAvg(unittest.TestCase):
         expectedoutput = "WEDNESDAY"
         self.assertEqual(actualoutput, expectedoutput)
 
-    def test_mutate_string(self):
+    def test1_mutate_string(self):
         actualoutput = calendar_module("26 07 2021")
         expectedoutput = "MONDAY"
         self.assertEqual(actualoutput, expectedoutput)
