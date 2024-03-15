@@ -3,7 +3,7 @@ from python_repo.src.Validate_email.util import is_valid_email
 
 
 class TestIsValidEmail(unittest.TestCase):
-    def test_is_valid_email(self):
+    def test1_is_valid_email(self):
         # Valid email addresses
         self.assertTrue(is_valid_email("lara@hackerrank.com"))
         self.assertTrue(is_valid_email("brian-23@hackerrank.com"))
