@@ -13,7 +13,7 @@ class TestCalAvg(unittest.TestCase):
 
     def test1_find_the_runnerup(self):
         n = 6
-        scores=[8,4,5,2,9,6]
+        scores=[8,4,5,2,9,8]
         actualoutput = find_runner_up_score(scores)
         expectedoutput = 8
         self.assertEqual(actualoutput, expectedoutput)
