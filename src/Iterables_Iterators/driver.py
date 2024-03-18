@@ -7,5 +7,5 @@ length = int(input())
 letters = input().split()
 num_indices = int(input())
 
-result = probability_of_letter(length, letters, num_indices)
-logging.debug(result)
+rslt = probability_of_letter(length, letters, num_indices)
+logging.debug(rslt)
