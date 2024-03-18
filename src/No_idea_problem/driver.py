@@ -7,5 +7,5 @@ if __name__ == "__main__":
     like_set = list(map(int, input().split()))
     dislike_set = list(map(int, input().split()))
 
-    happiness = calculate_happiness(n, m, arr, like_set, dislike_set)
-    logging.debug(happiness)
+    happy = calculate_happiness(n, m, arr, like_set, dislike_set)
+    logging.debug(happy)
