@@ -10,6 +10,6 @@ if __name__ == "__main__":
         cubes = list(map(int, input().strip().split()))
         test.append(cubes)
 
-    results = can_stack_cubes(test)
-    for result in results:
+    rslts = can_stack_cubes(test)
+    for result in rslts:
         logging.debug(result)
