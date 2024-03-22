@@ -4,6 +4,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 def calc_average(n,student_input,query_name):
     student_marks={}
+
     for _ in range(n):
         name, *marks = student_input[_].split()
         scored_value= list(map(float, marks))
