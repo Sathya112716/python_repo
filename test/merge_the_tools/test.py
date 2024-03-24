@@ -2,14 +2,23 @@ import unittest
 from python_repo.src.merge_the_tools.util import merge_the_tools
 
 class MyTestCase(unittest.TestCase):
-    def test1(selfself):
-        actual_input=merge_the_tools()
-        expected_output="""AB
-    CA
-    AD
-    """
-        self.assertEqual(actual_input,expected_output)
-        '''
-    AABCAADA
-    3
-        '''
+    def test1(self):
+        # s=AABCAAADA
+        # k=3
+        actual_output = merge_the_tools()
+        expected_output = 'AB\nCA\nAD'
+        self.assertEqual(actual_output, expected_output)
+
+    def test2(self):
+        # s=lolkok
+        # k=2
+        actual_output = merge_the_tools()
+        expected_output = 'lo\nlk\nok'
+        self.assertEqual(actual_output, expected_output)
+
+    def test3(self):
+        # s=satyay
+        # k=3
+        actual_output = merge_the_tools()
+        expected_output = 'sat\nya'
+        self.assertEqual(actual_output, expected_output)
