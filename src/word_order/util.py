@@ -18,4 +18,4 @@ def count_word_occurrences():
     return distinct_words, occurrences
 distinct_words, occurrences = count_word_occurrences()
 logging.debug(distinct_words)
-logging.debug(occurrences)
+logging.debug(occurrences) #occurences
