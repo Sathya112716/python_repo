@@ -1,3 +1,3 @@
-import logging
+from util import count_word_occurrences
 
-from util import text_alignment_logo
+count_word_occurrences()
