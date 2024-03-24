@@ -1,12 +1,6 @@
-import logging
 
-from util import is_valid_email
 
-def fun(s):
-    return is_valid_email(s)
+from util import validating_email
 
-n = int(input().strip())
-emails = [input().strip() for _ in range(n)]
+validating_email()
 
-valid_emails = sorted(filter(fun, emails))
-logging.debug(valid_emails)
