@@ -1,17 +1,18 @@
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-def print_formatted(number):
-    width = len(bin(number)[2:])
+# util.py
+
+def print_formatted():
+    number = int(input())  # Maximum value to print
+
+    width = len(bin(number)[2:])  # Calculate the width of the binary representation
+
     for i in range(1, number + 1):
         decimal = str(i)
         octal = oct(i)[2:]
         hexadecimal = hex(i)[2:].upper()
         binary = bin(i)[2:]
 
-        formatted_decimal = decimal.rjust(width)
-        formatted_octal = octal.rjust(width)
-        formatted_hexadecimal = hexadecimal.rjust(width)
-        formatted_binary = binary.rjust(width)
 
-        logging.debug(f"{formatted_binary} {formatted_octal}{formatted_hexadecimal}{formatted_decimal}")
+    logging.debug(f"{decimal.rjust(width)} {octal.rjust(width)} {hexadecimal.rjust(width)} {binary.rjust(width)}")
