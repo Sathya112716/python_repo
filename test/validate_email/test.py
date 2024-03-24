@@ -1,5 +1,5 @@
 import unittest
-from python_repo.src.Validate_email.util import is_valid_email
+from python_repo.src.validate_email.util import is_valid_email
 
 
 class TestIsValidEmail(unittest.TestCase):
