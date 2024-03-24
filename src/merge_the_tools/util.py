@@ -2,16 +2,20 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-
-def merge_the_tools(string, k):
-    n = len(string)
-    substrings = [string[i:i + k] for i in range(0, n, k)]
-
-    for substring in substrings:
+def merge_the_tools():
+    s = input().strip()
+    k = int(input().strip())
+    n = len(s)
+    result = []
+    for i in range(0, n, k):
+        sub_string = s[i:i + k]
         unique_chars = []
-        for char in substring:
+        for char in sub_string:
             if char not in unique_chars:
                 unique_chars.append(char)
-        result=''.join(unique_chars)
-        logging.debug(result)
-    return result
+        result.append(''.join(unique_chars))
+    return '\n'.join(result)
+logging.debug(merge_the_tools())
+
+
+
