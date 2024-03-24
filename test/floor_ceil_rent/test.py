@@ -1,16 +1,20 @@
-from python_repo.src.floor_ceil_rint.util import floor_ceil_rint_calculate
+from python_repo.src.floor_ceil_rint.util import print_floor_ceil_rint
 import unittest
+
 class MyTestCase(unittest.TestCase):
-    def test1_something(self):
-        input_str = "1.1 2.2 3.3 4.4 5.5 6.6 7.7 8.8 9.9"
+    def test1(self):
+        actual_output = print_floor_ceil_rint()#input=1.1 2.2 3.3
+        expected_output = "(array([1., 2., 3.]), array([2., 3., 4.]), array([1., 2., 3.]))"
+        self.assertEqual(str(actual_output), expected_output)
 
-        floor, ceil, rint = floor_ceil_rint_calculate(input_str)
+    def test2(self):
+        actual_output = print_floor_ceil_rint()#1.1 2.2 3.3 4.4 5.5
+        expected_output = "(array([1., 2., 3., 4., 5.]), array([2., 3., 4., 5., 6.]), array([1., 2., 3., 4., 6.]))"
+        self.assertEqual(str(actual_output), expected_output)
 
-        self.assertEqual(floor_ceil_rint_calculate(input_str), ([1, 2, 3, 4, 5, 6, 7, 8, 9],
-                                                [2.1, 3.2, 4.3, 5.4, 6.5, 7.6, 8.7, 9.8, 10.9],
-                                                [1.1, 2.2, 3.3, 4.4, 5.5, 7.7, 8.8, 9.9]))
-
-
-
+    def test3(self):
+        actual_output = print_floor_ceil_rint() #input
+        expected_output = "(array([6., 7.]), array([7., 8.]), array([7., 8.]))"
+        self.assertEqual(str(actual_output), expected_output)
 if __name__ == '__main__':
     unittest.main()
