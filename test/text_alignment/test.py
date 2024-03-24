@@ -1,25 +1,35 @@
 import unittest
-from python_repo.src.text_alignment.util import text_alignment_logo
+from python_repo.src.text_alignment.util import print_hackerrank_logo
 class TestCase(unittest.TestCase):
-   def test_something(self):
-     expected_result = [
-           '  H  ',
-           ' HHH ',
-           'HHHHH',
-           ' HHH         HHH        ',
-           ' HHH         HHH        ',
-           ' HHH         HHH        ',
-           ' HHH         HHH        ',
-           ' HHHHHHHHHHHHHHH  ',
-           ' HHHHHHHHHHHHHHH  ',
-           ' HHH         HHH        ',
-           ' HHH         HHH        ',
-           ' HHH         HHH        ',
-           ' HHH         HHH        ',
-           '            HHHHH ',
-           '             HHH  ',
-           '              H   ',
-       ]
-     self.assertEqual(expected_result, text_alignment_logo(3))  ## add assertion here
+   def test1(self): #thickness=5
+      actual_output=print_hackerrank_logo()
+      expected_output=
+   "H
+   HHH
+  HHHHH
+ HHHHHHH
+HHHHHHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHHHHHHHHHHHHHHHHHHHHHH
+  HHHHHHHHHHHHHHHHHHHHHHHHH
+  HHHHHHHHHHHHHHHHHHHHHHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+  HHHHH               HHHHH
+                    HHHHHHHHH
+                     HHHHHHH
+                      HHHHH
+                       HHH
+                        H     "
+         self.assertEqual(actual_output,expected_output)
+## add assertion here
 if __name__ == '__main__':
    unittest.main()
