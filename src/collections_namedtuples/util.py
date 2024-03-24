@@ -3,8 +3,12 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 from collections import namedtuple
 
-def calculate_average(students):
-    Student = namedtuple('Student', students[0])
-    total_marks = sum(float(Student[students[0].index('MARKS')]) for Student in students[1:])
-    average = total_marks / (len(students)-1)
-    return "{:.2f}".format(average)
+
+def calculate_average():
+    n = int(input())
+    columns = input().split()
+    Student = namedtuple('Student', columns)
+    marks_index = columns.index('MARKS')
+    total_marks = sum(int(input().split()[marks_index]) for _ in range(n))
+    return total_marks / n
+logging.debug('{:.2f}'.format(calculate_average()))
