@@ -1,10 +1,22 @@
-import logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+import logging
 import numpy as np
 
-def calculate_statistics(arr):
-    mean = np.mean(arr, axis=0), np.mean(arr, axis=1), np.mean(arr)
-    var = np.var(arr, axis=0), np.var(arr, axis=1), np.var(arr)
-    std = np.std(arr, axis=0), np.std(arr, axis=1), np.std(arr)
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def calculate_statistics():
+    X, Y = map(int, input().split())
+    arr = []
+    for _ in range(X):
+        arr.append(list(map(int, input().split())))
+
+    mean = np.mean(arr, axis=1)
+    var = np.var(arr, axis=1)
+    std = np.std(arr, axis=1)
+
+    logging.debug(mean)
+    logging.debug(var)
+    logging.debug(std)
+
     return mean, var, std
+
