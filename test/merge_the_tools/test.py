@@ -1,7 +1,7 @@
 import unittest
 from python_repo.src.merge_the_tools.util import merge_the_tools
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(unittest.TestCase): #import unittesting
     def test1(self):
         # s=AABCAAADA
         # k=3
