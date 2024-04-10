@@ -1,4 +1,4 @@
-import logging
+import logging #import
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def count_word_occurrences():
