@@ -1,4 +1,4 @@
-import logging
+import logging #import util
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 def find_runner_up_score():
